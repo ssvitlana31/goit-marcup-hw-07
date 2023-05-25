@@ -49,7 +49,7 @@ body {
 }
 /* mobile menu */
 .burger-menu-open{
-margin-left: auto;
+margin-left: 380px;
 }
 .sidebar{
   width: 428px;
@@ -58,10 +58,96 @@ margin-left: auto;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
 position: absolute;
-left: 50%;
-top: 50%;
-transform: translate(-50%, -50%) scale(1);
+left: 0;
+top: 0;
+z-index: 1;
+
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-burger-menu{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e9fc;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  padding: 0;
+  top: 24px;
+  right: 24px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-mobile{
+  display: block;
+  margin: 80px 237px 284px 40px;
+}
+.menu-mobile-item{
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+color: #2E2F42;
+margin-bottom: 40px;
+
+}
+.menu-mobile-item :last-child{
+  margin-bottom: 0;
+}
+.menu-mobile-item-link:hover,
+.menu-mobile-item-link:focus {
+  color: #404bbf;
+}
+
+.menu-mobile-item-link.active {
+  color: #404bbf;
+}
+.contacts-mobile{
+  margin: 0 35px 38px 40px;
+}
+.contacts-mobile-item{
+  margin-bottom: 40px;
+}
+.contacts-mobile-item:last-child{
+  margin-bottom: 0;
+}
+.contacts-mobile-list.tel{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2E2F42;
+}
+.contacts-mobile-list.email{
+font-style: normal;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: #434455;
+
+}
+.social-mobile{
+  margin: 0 60px 40px 40px;
+}
+.social-mobile-list{
+  display: flex;
+  flex-direction: row;
+  gap: 56px;
+}
+.contacts-mobile-list-link {
+  color: var(--second-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-mobile-list-link:hover,
+.contacts-mobile-list-link:focus {
+  color: #404bbf;
 }
 /* Header*/
 .header-container {
